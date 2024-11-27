@@ -1,0 +1,100 @@
+:root {
+  --primary-color: #333;
+  --secondary-color: #fff; /* Color secundario */
+  --background-color: #f4f4f4; /* Color de fondo */
+  --text-color: #333333; /* Color del texto */
+  --border-color: #ccc; /* Color de borde */
+  --highlight-color: #555; /* Color para destacar */
+
+  /* Fuentes */
+  --font-family: 'Arial', sans-serif;
+  --font-family-heading: 'Georgia', serif;
+
+  /* Tamaños */
+  --font-size-base: 16px;
+  --font-size-large: 18px;
+  --font-size-small: 14px;
+  --line-height: 1.5;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+
+nav {
+  background-color: var(--primary-color);
+  padding: 10px;
+}
+
+nav button {
+  color: var(--background-color);
+  background-color: var(--primary-color);
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: var(--highlight-color);
+}
+
+.game-card {
+  background-color: var(--background-color);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  margin: 5px;
+  cursor: pointer;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 10px 20px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  background-color: var(--highlight-color);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+input {
+  padding: 10px 15px;
+  border: 1px solid var(--highlight-color);
+  background-color: var(--secondary-color);
+  width: 100%;
+}
